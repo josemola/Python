@@ -1,0 +1,5 @@
+peso = float (input("Dime tu peso en kg: "))
+altura = float(input("Dime tu altura en metros: "))
+masaCorporal = peso / (altura **2)
+masaredonda = round(masaCorporal,2)
+print ("Tu masa corporal es " + str(masaredonda))
