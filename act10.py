@@ -1,0 +1,5 @@
+cpaya=int(input("Dime el número de payasos: "))
+cmune=int(input("Dime el número de muñecas: "))
+payasos=int(112)
+munecas=int(75)
+print("El paquete pesará", (cpaya*payasos)+(cmune*munecas))
