@@ -1,5 +1,5 @@
 nombre= input("Ingrese su nombre completo: ")
 x= 3
-while x != 0:
-    print(nombre)
-    x= x - 1
+print((nombre.lower()+"\n"))
+print((nombre.upper()+"\n"))
+print((nombre.title()+"\n"))
