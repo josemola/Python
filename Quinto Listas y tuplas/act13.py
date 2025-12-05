@@ -6,15 +6,17 @@ while x < len(lista):
     suma = suma + lista[x]
     x = x + 1
 
-    a=lista[x]-lista[x+1]
-    s=a**2
-    print(s)
-    
-print(suma)
 media=suma / len(lista)
 print(media, "Esta es la media")
 print(lista)
 
-desviatipica= 1
-print(desviatipica)
-print(suma)
+sumacuadrados = 0
+x = 0
+while x < len(lista):
+    a = lista[x] - media
+    s = a ** 2
+    sumacuadrados = sumacuadrados + s
+    x = x + 1
+
+desviatipica = (sumacuadrados / len(lista)) ** 0.5
+print(desviatipica, "Esta es la desviación típica")
