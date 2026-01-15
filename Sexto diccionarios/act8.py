@@ -1,14 +1,17 @@
 diccionario={}
-termina="no"
+palabra=input("Dame una palabra en 'español':'inglés' separadas por comas: ")
 x=0
-while termina != "si":
-    palabra=input("Dame una palabra en 'español:inglés': ")
-    termina=input("¿Has terminado? ")
-    diccionario[palabra.split(":")[0]]=palabra.split(":")[1]
+for par in palabra.split(','):
+    esp, eng = par.split(':')
+    diccionario[esp.strip()] = eng.strip()
 
 frase=input("Dame una frase en español: ")
 
-while x != 10:
-    if frase.split(" ")[x]() in diccionario:
-        print(diccionario[frase.split(" ")[x]()])
-    x=x+1
+frasePalabras = frase.split()
+resultado = []
+
+for aaa in frasePalabras:
+    traduccion = diccionario.get(aaa, aaa)
+    resultado.append(traduccion)
+
+print("La frase se traduce a: ", " ".join(resultado))
