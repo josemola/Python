@@ -45,15 +45,12 @@ while x!=6:
     elif x==4:
         print("Estos son los clientes: ")
         for nifs, datoss in cliente.items():
-            print(f"NIF: {nifs} -Nombre: {datos['nombre']}")
+            print(f"NIF: {nifs} -Nombre: {datoss['nombre']}")
 
     elif x==5:
-        #ARREGLAR
         print("Clientes preferentes: ")
         for nifs, datoss in cliente.items():
-            if datoss['preferente']=="True":
-                print(f"NIF: {nif} - Nombre: {datoss['nombre']}")
+            if datoss['preferencia']=="True":
+                print(f"NIF: {nifs} - Nombre: {datoss['nombre']}")
 
-
-    
-       
+print("Adiós")
