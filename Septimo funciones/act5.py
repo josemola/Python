@@ -3,8 +3,8 @@ def circulo(rad):
     return total
 
 def cilindro(r,h):
-    resultado=3.1416*(r^2)*h
+    resultado=3.1416*(r**2)*h
     return resultado
 
-print(circulo(10))
-print(cilindro(5,3))
+print("El area del circulo es: ",circulo(10))
+print("El volumen del cilindro es: ", cilindro(5,3))
