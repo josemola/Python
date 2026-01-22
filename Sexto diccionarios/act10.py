@@ -52,9 +52,9 @@ while x!=6:
         for nifs, datoss in cliente.items():
             if datoss['preferencia']=="True":
                 print(f"NIF: {nifs} - Nombre: {datoss['nombre']}")
+    
     elif x==6:
         print("Adiós")
-    
     
     else :
         print("No te he entendido")
